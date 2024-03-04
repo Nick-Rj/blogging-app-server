@@ -24,4 +24,9 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
+//Routes
+import blogRouter from "./routes/blog.routes.js";
+
+app.use("/api/v1/blogs", blogRouter);
+
 export { app };

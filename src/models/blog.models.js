@@ -11,7 +11,7 @@ const blogSchema = new Schema(
       type: String,
       required: [true, "Blog description is required!"],
     },
-    paraArray: [{ type: String }],
+    paraArray: [{ type: String, required: true }],
     // headerImage: {
     //   type: String,
     //   required: true,
